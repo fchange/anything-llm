@@ -516,7 +516,7 @@ async function getGiteeAIModels(apiKey = null) {
         id: model.id,
         name: model.id,
         organization: model.owned_by,
-      })),
+      }))
     )
     .catch((e) => {
       console.error(`GiteeAI:listModels`, e.message);
